@@ -131,7 +131,7 @@ exports.deleteUserProject = async(req,res)=>{
 
      try{
           const removeProject = await projects.findByIdAndDelete({_id:id})
-z
+
           res.status(200).json(removeProject)
      }
 

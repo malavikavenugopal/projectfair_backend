@@ -37,7 +37,8 @@ const router = new express.Router()
     router.put('/project/edit/:id',jwtMiddleware,multerConfig.single('image'),projectController.editUserProject)
 //     f)delete project
     router.delete('/project/remove/:id',jwtMiddleware,projectController.deleteUserProject)
-
+//     g) edit user
+router.put('/user/edit',jwtMiddleware,multerConfig.single('profile'), userController.editUser)
     // 4) export router
 
 module.exports = router

@@ -27,3 +27,4 @@ next()
   //next() here we place next control returns to controller when an error occured that is if in the case of authentication failed
 }
 module.exports=jwtmiddlewear
+
